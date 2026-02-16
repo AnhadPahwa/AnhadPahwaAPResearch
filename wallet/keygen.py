@@ -27,10 +27,6 @@ def load_wallet_pk() -> ECC.EccKey:
     return ECC.import_key(PK_PATH.read_text(encoding="utf-8"))
 
 def wallet_pubkey_b64() -> str:
-    """
-    We need a stable public key encoding. Use the PEM bytes -> base64url.
-    This is not a standard DID encoding, but it's deterministic for the prototype.
-    """
     pem = PK_PATH.read_text(encoding="utf-8").encode("utf-8")
     return b64url_encode(pem)
 

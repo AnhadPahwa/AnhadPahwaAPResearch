@@ -266,7 +266,7 @@ app.post("/verify_v2", async (req, res) => {
       okObj?.ok?.verified === true;
 
     if (!proofOk) {
-      return res.json({ accepted: false, reason: "SIG_INVALID", checks: { ...checks, sig_valid: false } });
+      return res.json({ accepted: false, reason: "PROOF_INVALID", checks: { ...checks, sig_valid: false } });
     }
     checks.sig_valid = true;
 

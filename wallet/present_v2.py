@@ -27,7 +27,7 @@ def load_wallet_secret() -> bytes:
     if not secret_path.exists():
         raise FileNotFoundError(
             f"Missing {secret_path}. "
-            f"Create it or point this function at your existing Tier 1 wallet secret."
+            f"Create it or point this function at existing Tier 1 wallet secret."
         )
     return secret_path.read_bytes()
 
