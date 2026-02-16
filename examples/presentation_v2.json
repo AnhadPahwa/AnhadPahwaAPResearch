@@ -1,0 +1,12 @@
+{
+  "version": "v2",
+  "domain": "example.com",
+  "policy_id": "age_over_18",
+  "nonce": "...",
+  "pairwise_nym": "...",
+  "issuer_bbs_pubkey": { "publicKey": "..." },
+  "revealed_indices": [1,2,4],
+  "revealed_messages_by_index": { "1":"18+", "2":"high", "4":"2026-..." },
+  "bbs_proof": "...",
+  "revocation_handle": "..."
+}

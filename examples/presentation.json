@@ -1,0 +1,32 @@
+{
+  "version": "v1",
+
+  "domain": "example.com",
+  "policy_id": "age_over_18",
+  "nonce": "base64url(...)",
+  "timestamp": "2026-01-20T08:00:10Z",
+
+  "pairwise_nym": "base64url(HMAC_SHA256(wallet_secret, domain))",
+
+  "disclosed": {
+    "issuer_id": "issuer:local:v1",
+    "assurance_level": "high",
+    "expiry": "2026-04-20T00:00:00Z"
+  },
+
+  "hidden_commitments": {
+    "age_group_commit": "base64url(SHA256(age_group || salt_age))",
+    "revocation_handle_commit": "base64url(SHA256(revocation_handle || salt_rev))"
+  },
+
+  "bindings": {
+    "presentation_digest": "base64url(SHA256(canonicalize(disclosed + commitments + domain + policy_id + nonce)))"
+  },
+
+  "attached": {
+    "credential": [" ... full credential JSON ... "],
+    "issuer_sig": "base64url(...)"
+  },
+
+  "wallet_sig": "base64url(Sign_wallet(presentation_digest))"
+}

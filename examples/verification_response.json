@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "reason": "OK",
+  "checks": {
+    "sig_valid": true,
+    "wallet_sig_valid": true,
+    "nonce_fresh": true,
+    "policy_satisfied": true,
+    "not_revoked": true,
+    "rate_limited": false
+  }
+}

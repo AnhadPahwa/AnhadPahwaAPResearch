@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local state / secrets
+issuer_data/
+wallet_data/
+verifier_data/
+*.pem
+*.key
+*.crt
+
+# Experiment outputs
+experiments/results/
+*.csv
+
+# OS junk
+.DS_Store

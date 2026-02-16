@@ -1,0 +1,13 @@
+{
+  "claims": {
+    "age_group": "18+",
+    "assurance_level": "high",
+    "jurisdiction": "GB"
+  },
+  "cred_id": "996ef31d-cd79-4778-a56d-51d6e4f5f693",
+  "expiry": "2026-05-14T11:15:51Z",
+  "issuer_id": "issuer:local:v1",
+  "revocation_handle": "ppTnZcxh1vl2yP-Z1YmxRA",
+  "subject_pubkey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUNvd0JRWURLMlZ3QXlFQTVkMTZyNnZiZUEwQUxNSDVyS1FnbnRXVDBXeGpxaUZDTWhSZDhkdWdEeVU9Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ",
+  "version": "v1"
+}

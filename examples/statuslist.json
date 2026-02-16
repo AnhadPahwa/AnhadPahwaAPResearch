@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "issuer_id": "issuer:local:v1",
+  "generated_at": "2026-01-20T08:00:00Z",
+  "revoked_handles": [
+    "base64url(handle1)",
+    "base64url(handle2)"
+  ],
+  "sig": "base64url(Sign_issuer(SHA256(canonicalize(statuslist_without_sig))))"
+}
